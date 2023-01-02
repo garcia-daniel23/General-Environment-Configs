@@ -33,3 +33,10 @@ let mapleader = " "
 
 "keybinds
 map <leader>n :noh<CR>
+nnoremap <leader><bar> <c-w>v
+noremap <leader>- <c-w>s
+nnoremap <leader>= :action Unsplit<CR>
+
+"IDEAVIM keybinds
+"nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
+"nnoremap <leader>m :action MoveEditorToOppositeTabGroup<CR>
