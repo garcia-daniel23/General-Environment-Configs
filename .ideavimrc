@@ -1,0 +1,75 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+
+"defaults
+set number
+set autoindent
+set expandtab
+set shiftround
+set shiftwidth=4
+set smarttab
+set tabstop=4
+set hlsearch
+set linebreak
+set scrolloff=4
+set wrap
+set laststatus=2
+set ruler
+set visualbell
+set noerrorbells
+set relativenumber
+set incsearch
+
+let mapleader = " "
+set easymotion
+
+"keybinds
+"get out of insert mode
+inoremap kj <esc>
+vnoremap kj <esc>
+"Clear highlights from search
+map <leader>n :noh<CR>
+"vertical split window
+nnoremap <leader><bar> <c-w>v
+"horizontal split window
+noremap <leader>- <c-w>s
+noremap <leader>h <c-w>h
+noremap <leader>j <c-w>j
+noremap <leader>k <c-w>k
+noremap <leader>l <c-w>l
+noremap <leader>o <c-o>
+noremap <leader>i <c-i>
+noremap <leader>p [{
+noremp <leader>r :action Run
+nnoremap <leader>= :action Unsplit<CR>
+
+"IDEAVIM keybinds
+nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
+nnoremap <leader>m :action MoveEditorToOppositeTabGroup<CR>
+
+Plug 'preservim/nerdtree'
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code actio
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+a

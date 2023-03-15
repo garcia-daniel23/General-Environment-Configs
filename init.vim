@@ -23,7 +23,7 @@ call plug#begin('~/.vim/plugged')
 " Add plug in
 "   Any valid git URL is allowed
 "   Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'https://github.com/morhetz/gruvbox.git'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 colorscheme gruvbox
@@ -33,6 +33,11 @@ let mapleader = " "
 
 "keybinds
 map <leader>n :noh<CR>
+inoremap kj <esc>
+nnoremap <leader>h <c-w>h
+nnoremap <leader>j <c-w>j
+nnoremap <leader>k <c-w>k
+nnoremap <leader>l <c-w>l
 nnoremap <leader><bar> <c-w>v
 noremap <leader>- <c-w>s
 nnoremap <leader>= :action Unsplit<CR>
