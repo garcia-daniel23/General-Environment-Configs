@@ -51,8 +51,9 @@ noremap <leader>k <c-w>k
 noremap <leader>l <c-w>l
 noremap <leader>o <c-o>
 noremap <leader>i <c-i>
+noremap <leader>q :q<CR>
 noremap <leader>p [{
-noremp <leader>r :action Run
+noremap <leader>r :action Run<CR>
 nnoremap <leader>= :action Unsplit<CR>
 
 "IDEAVIM keybinds
@@ -72,4 +73,4 @@ Plug 'preservim/nerdtree'
 
 
 " Find more examples here: https://jb.gg/share-ideavimrc
-a
+

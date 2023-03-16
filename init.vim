@@ -18,30 +18,36 @@ set relativenumber
 set incsearch
 
 
-" Initialize plugin system
+" Initailize plugin system
 call plug#begin('~/.vim/plugged')
-" Add plug in
-"   Any valid git URL is allowed
-"   Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
 Plug 'morhetz/gruvbox'
+Plug 'easymotion/vim-easymotion'
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
 colorscheme gruvbox
-set background=dark
+
 
 let mapleader = " "
 
 "keybinds
-map <leader>n :noh<CR>
+"get out of insert mode
 inoremap kj <esc>
-nnoremap <leader>h <c-w>h
-nnoremap <leader>j <c-w>j
-nnoremap <leader>k <c-w>k
-nnoremap <leader>l <c-w>l
+vnoremap kj <esc>
+"Clear highlights from search
+map <leader>n :noh<CR>
+"vertical split window
 nnoremap <leader><bar> <c-w>v
+"horizontal split window
 noremap <leader>- <c-w>s
-nnoremap <leader>= :action Unsplit<CR>
+noremap <leader>h <c-w>h
+noremap <leader>j <c-w>j
+noremap <leader>k <c-w>k
+noremap <leader>l <c-w>l
+noremap <leader>o <c-o>
+noremap <leader>i <c-i>
+noremap <leader>q :q<CR>
+noremap <leader>p [{
 
-"IDEAVIM keybinds
-"nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
-"nnoremap <leader>m :action MoveEditorToOppositeTabGroup<CR>
